@@ -95,14 +95,8 @@ public final class Main {
 		};
 		final Node root = new Node(tree);
 		System.out.println(root);
-		final NodeVisitor visitor = new NodeVisitor() {
-			/**
-			 * @see NodeVisitor#visit(Node)
-			 */
-			@Override
-			public void visit(final Node n) {
-				System.out.println(n.getValue());
-			}
+		final NodeVisitor visitor = n -> {
+			System.out.println(n.getValue());
 		};
 //		depthFirstIterative(root, visitor);
 		depthFirstRecursive(root, visitor);
