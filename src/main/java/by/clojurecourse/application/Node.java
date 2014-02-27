@@ -97,7 +97,7 @@ public final class Node implements Iterable<Node> {
 
 	/**
 	 * @return a scalar value (the sum of all integers in {@link #numbers})
-	 *         associated with this node.  
+	 *         associated with this node.
 	 */
 	public int getValue() {
 		int value = 0;
@@ -125,7 +125,7 @@ public final class Node implements Iterable<Node> {
 		for (final Integer number : this.numbers) {
 			builder.append(number.intValue()).append(", ");
 		}
-		
+
 		for (final Node child : this.children) {
 			builder.append(child).append(", ");
 		}
